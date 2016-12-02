@@ -1,0 +1,8 @@
+{
+  "preset": "node-style-guide",
+  "excludeFiles": [
+    "node_modules/**",
+    "dist/**",
+    "grunt/uglify.js",
+  ],
+}

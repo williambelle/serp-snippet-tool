@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Optimize the content of your titles and snippets to maximize your click-through rate (CTR) from Google",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/williambelle/serp-preview-extension.git",
@@ -15,7 +14,6 @@
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-uglify": "^2.0.0",
     "grunt-jscs": "^3.0.1",
     "load-grunt-config": "^0.19.2"
   }

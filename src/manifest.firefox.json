@@ -1,0 +1,33 @@
+{
+  "name": "SERP Snippet Tool",
+  "description": "Optimize the content of your titles and snippets to maximize your click-through rate (CTR) from Google",
+  "manifest_version": 2,
+  "version": "0.0.1",
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "46.0.0"
+    }
+  },
+
+  "permissions": ["http://*/*", "https://*/*", "tabs"],
+
+  "browser_action": {
+    "default_icon": {
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "SERP Snippet Tool",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [{
+    "js": [ "js/contentscript.js" ],
+    "matches": [ "http://*/*", "https://*/*" ],
+    "run_at": "document_end"
+  }],
+
+  "icons": {
+    "48": "images/icon-48.png"
+  }
+}

@@ -29,6 +29,11 @@ Build
 $ grunt build
 ```
 
+Screenshot
+----------
+
+![Screenshot](https://raw.github.com/williambelle/serp-preview-extension/master/doc/screenshot.jpg)
+
 License
 -------
 

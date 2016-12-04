@@ -1,0 +1,51 @@
+body {
+  font-family: arial, sans-serif;
+  color: #222;
+  font-size: 12px;
+}
+
+#container {
+  width: 600px;
+}
+
+h1 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.google-results {
+  padding: 0 10px 20px;
+}
+
+#title {
+  font-size: 18px;
+  font-family: arial,sans-serif;
+  color: #12C;
+  cursor: pointer;
+  line-height: 21.6px;
+}
+
+#url {
+  color: #093;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#description {
+  color: #545454;
+  font-size: 13px;
+  line-height: 18.2px;
+}
+
+/* Footer */
+
+#footer {
+  height:15px;
+  text-align:right;
+  font-size:9px;
+}
+
+#footer p {
+  font-size:8px;
+}

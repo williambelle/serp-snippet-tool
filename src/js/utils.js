@@ -12,7 +12,7 @@ serpSnippetTool.utils = {
 
   buildDescription: function(htmlObj) {
     var description = htmlObj.find('meta[name=description]').attr('content') ||
-      htmlObj.find('meta[property=\'og\\:title\']').attr('content') ||
+      htmlObj.find('meta[property=\'og\\:description\']').attr('content') ||
       ' ';
     if (description.length > 156) {
       description = description.substring(0,156) + ' ...';

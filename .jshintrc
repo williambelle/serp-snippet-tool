@@ -13,6 +13,10 @@
   "browser": true,
   "globals": {
     "$": false,
-    "chrome": false
+    "chrome": false,
+    "chai": true,
+    "it": true,
+    "describe": true,
+    "serpSnippetTool": true
   }
 }

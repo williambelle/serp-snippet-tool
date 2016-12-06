@@ -25,13 +25,51 @@
         '/blob/master/src/manifest.firefox.json';
 
       var expectedLongUrl = 'https://github.com/williambelle/' +
-        'serp-preview-extension/blob/ ...';
+        'serp-preview-extension/blob/master/sr ...';
 
       var expShortUrl = serpSnippetTool.utils.buildUrl(shortUrl);
       expShortUrl.should.equal(shortUrl);
 
-      var expLongUrl = serpSnippetTool.utils.buildTitle(longUrl);
+      var expLongUrl = serpSnippetTool.utils.buildUrl(longUrl);
       expLongUrl.should.equal(expectedLongUrl);
+    });
+
+    it('should return the meta description', function() {
+
+      var shortHtml = '<!doctype html><html lang="en"><head>' +
+        '<meta charset="utf-8" /><title>SERP Snippet Tool</title>' +
+        '<meta name="description" content="Pro Visu is a charitable ' +
+        'foundation of public utility in Switzerland, acting for the ' +
+        'promotion and prevention of eye diseases from citizens." />' +
+        '</head><body></body></html>';
+
+      var expectedDesc = 'Pro Visu is a charitable foundation of public ' +
+        'utility in Switzerland, acting for the promotion and prevention of ' +
+        'eye diseases from citizens.';
+
+      var htmlObj = serpSnippetTool.utils.buildHtml(shortHtml);
+      var expDesc = serpSnippetTool.utils.buildDescription(htmlObj);
+      expDesc.should.equal(expectedDesc);
+
+    });
+
+    it('should return the og description', function() {
+
+      var shortHtml = '<!doctype html><html lang="en"><head>' +
+        '<meta charset="utf-8" /><title>SERP Snippet Tool</title>' +
+        '<meta property="og:description" content="Pro Visu is a charitable ' +
+        'foundation of public utility in Switzerland, acting for the ' +
+        'promotion and prevention of eye diseases from citizens." />' +
+        '</head><body></body></html>';
+
+      var expectedDesc = 'Pro Visu is a charitable foundation of public ' +
+        'utility in Switzerland, acting for the promotion and prevention of ' +
+        'eye diseases from citizens.';
+
+      var htmlObj = serpSnippetTool.utils.buildHtml(shortHtml);
+      var expDesc = serpSnippetTool.utils.buildDescription(htmlObj);
+      expDesc.should.equal(expectedDesc);
+
     });
   });
 })();

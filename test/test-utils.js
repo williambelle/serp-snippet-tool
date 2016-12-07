@@ -71,5 +71,24 @@
       expDesc.should.equal(expectedDesc);
 
     });
+
+    it('should return a shorter meta description', function() {
+
+      var shortHtml = '<!doctype html><html lang="en"><head>' +
+        '<meta charset="utf-8" /><title>SERP Snippet Tool</title>' +
+        '<meta name="description" content="Lorem ipsum dolor sit amet, ' +
+        'consectetur adipiscing elit. Nulla semper ligula pellentesque ' +
+        'lectus pellentesque aliquet. Praesent elementum sit amet tellus ' +
+        'in dapibus." /></head><body></body></html>';
+
+      var expectedDesc = 'Lorem ipsum dolor sit amet, consectetur adipiscing ' +
+        'elit. Nulla semper ligula pellentesque lectus pellentesque aliquet. ' +
+        'Praesent elementum sit amet tellus in ...';
+
+      var htmlObj = serpSnippetTool.utils.buildHtml(shortHtml);
+      var expDesc = serpSnippetTool.utils.buildDescription(htmlObj);
+      expDesc.should.equal(expectedDesc);
+
+    });
   });
 })();

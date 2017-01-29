@@ -1,7 +1,7 @@
 {
   "name": "serp-preview-extension",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Optimize the content of your titles and snippets to maximize your click-through rate (CTR) from Google",
   "keywords": [],
   "author": "William Belle <william.belle@gmail.com>",

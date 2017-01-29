@@ -2,7 +2,7 @@
   "name": "SERP Snippet Tool",
   "description": "Optimize the content of your titles and snippets to maximize your click-through rate (CTR) from Google",
   "manifest_version": 2,
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "applications": {
     "gecko": {

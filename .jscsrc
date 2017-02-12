@@ -4,6 +4,7 @@
     "node_modules/**",
     "dist/**",
     "grunt/uglify.js",
-    "bower_components/**"
+    "bower_components/**",
+    "package/**",
   ],
 }

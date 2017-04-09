@@ -3,4 +3,4 @@ before_script:
   - bower install
 language: node_js
 node_js:
-  - "6"
+  - "7"

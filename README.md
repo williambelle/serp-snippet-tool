@@ -10,8 +10,8 @@
   <a href="https://travis-ci.org/williambelle/serp-preview-extension">
     <img alt="Travis Status" src="https://travis-ci.org/williambelle/serp-preview-extension.svg?branch=master">
   </a>
-  <a href='https://gemnasium.com/github.com/williambelle/serp-preview-extension'>
-    <img src="https://gemnasium.com/badges/github.com/williambelle/serp-preview-extension.svg" alt="Dependency Status" />
+  <a href="https://david-dm.org/williambelle/serp-preview-extension">
+    <img alt="Dependency Status" src="https://david-dm.org/williambelle/serp-preview-extension/status.svg"/>
   </a>
   <a href="https://github.com/williambelle/serp-preview-extension/issues">
     <img alt="Github Issues" src="https://img.shields.io/github/issues/williambelle/serp-preview-extension.svg">

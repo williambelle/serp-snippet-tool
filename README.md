@@ -19,6 +19,9 @@
   <a href="https://raw.githubusercontent.com/williambelle/serp-preview-extension/master/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg">
   </a>
+  <a href='https://github.com/williambelle/serp-preview-extension/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/williambelle/serp-preview-extension.svg" />
+  </a>
 </p>
 
 ---

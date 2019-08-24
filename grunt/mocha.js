@@ -1,9 +1,11 @@
+'use strict';
+
 module.exports = {
   all: {
     options: {
       run: true,
-      growlOnSuccess: false,
+      growlOnSuccess: false
     },
-    src: ['test/index.html'],
-  },
+    src: ['test/index.html']
+  }
 };

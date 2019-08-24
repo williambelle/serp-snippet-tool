@@ -1,0 +1,22 @@
+{
+  "extends": "standard",
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "$": true,
+    "chai": true,
+    "chrome": true,
+    "describe": true,
+    "it": true,
+    "serpSnippetTool": true
+  },
+  "rules": {
+    "max-len": [2, 80],
+    "semi": [2, "always"],
+    "strict": [2, "global"]
+  }
+}

@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="SERP Snippet Tool" src="https://raw.githubusercontent.com/williambelle/serp-preview-extension/master/assets/readme-logo.png">
+  <img alt="SERP Snippet Tool" src="https://raw.githubusercontent.com/williambelle/serp-snippet-tool/master/assets/readme-logo.png">
 </p>
 
 <p align="center">
@@ -7,20 +7,17 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/williambelle/serp-preview-extension">
-    <img alt="Travis Status" src="https://travis-ci.org/williambelle/serp-preview-extension.svg?branch=master">
+  <a href="https://travis-ci.org/williambelle/serp-snippet-tool">
+    <img alt="Travis Status" src="https://travis-ci.org/williambelle/serp-snippet-tool.svg?branch=master">
   </a>
-  <a href="https://david-dm.org/williambelle/serp-preview-extension">
-    <img alt="Dependency Status" src="https://david-dm.org/williambelle/serp-preview-extension/status.svg"/>
+  <a href="https://david-dm.org/williambelle/serp-snippet-tool">
+    <img alt="Dependencies Status" src="https://david-dm.org/williambelle/serp-snippet-tool/status.svg"/>
   </a>
-  <a href="https://github.com/williambelle/serp-preview-extension/issues">
-    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/williambelle/serp-preview-extension.svg">
-  </a>
-  <a href="https://raw.githubusercontent.com/williambelle/serp-preview-extension/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/williambelle/serp-snippet-tool/master/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg">
   </a>
-  <a href='https://github.com/williambelle/serp-preview-extension/tags'>
-    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/williambelle/serp-preview-extension.svg" />
+  <a href='https://github.com/williambelle/serp-snippet-tool/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/williambelle/serp-snippet-tool.svg" />
   </a>
 </p>
 
@@ -37,26 +34,31 @@ Install
 
 To install the extension:
 
-  1. download the [latest release](https://github.com/williambelle/serp-preview-extension/releases/latest)
-  2. visit `chrome://extensions` in Chrome and drag the folder.
+1. download the [latest release](https://github.com/williambelle/serp-snippet-tool/releases/latest)
+1. visit `chrome://extensions` in Chrome and drag the folder.
 
 Features
 --------
 
-  * Quick preview
-  * Retrieve Title, Description and url
+* Quick preview
+* Retrieve Title, Description and url
 
 Screenshot
 ----------
 
-![Screenshot](https://raw.github.com/williambelle/serp-preview-extension/master/doc/screenshot.jpg)
+![Screenshot](https://raw.github.com/williambelle/serp-snippet-tool/master/doc/screenshot.jpg)
 
-Contributing to SERP Snippet Tool
----------------------------------
+Contributing
+------------
 
 Contributions are always welcome.
 
 See [Contributing](CONTRIBUTING.md).
+
+Developer
+---------
+
+* [William Belle](https://github.com/williambelle)
 
 License
 -------

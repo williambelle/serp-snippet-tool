@@ -11,7 +11,7 @@ module.exports = function (grunt, options) {
         nonull: true
       }, {
         expand: true,
-        cwd: 'bower_components/jquery/dist/',
+        cwd: 'node_modules/jquery/dist/',
         src: ['jquery.min.js'],
         dest: 'dist/chrome/js/',
         nonull: true
@@ -37,7 +37,7 @@ module.exports = function (grunt, options) {
         }
       }, {
         expand: true,
-        cwd: 'bower_components/jquery/dist/',
+        cwd: 'node_modules/jquery/dist/',
         src: ['jquery.min.js'],
         dest: 'dist/firefox/js/',
         nonull: true

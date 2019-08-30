@@ -37,15 +37,3 @@ h1 {
   font-size: 13px;
   margin-top: 3px;
 }
-
-/* Footer */
-
-#footer {
-  height:15px;
-  text-align:right;
-  font-size:9px;
-}
-
-#footer p {
-  font-size:8px;
-}

@@ -24,8 +24,5 @@
     "grunt-eslint": "22.0.0",
     "grunt-mocha": "^1.2.0",
     "load-grunt-config": "^3.0.0"
-  },
-  "dependencies": {
-    "jquery": "^3.4.1"
   }
 }

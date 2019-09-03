@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
   retrieveData();
 });
 
@@ -9,31 +9,20 @@ function retrieveData () {
     if (typeof tab[0] === 'undefined') {
       setTimeout(retrieveData(), 1000);
     } else {
-      if (tab[0].url.substring(0, 6) !== 'chrome') {
-        chrome.tabs.sendMessage(tab[0].id, 'getHTML', function (data) {
-          if (typeof tab[0] === 'undefined') {
-            setTimeout(retrieveData(), 1000);
-          } else {
-            processHtml(data, tab[0]);
-          }
-        });
-      }
+      chrome.tabs.sendMessage(tab[0].id, 'getSnippet', function (data) {
+        if (typeof tab[0] === 'undefined') {
+          setTimeout(retrieveData(), 1000);
+        } else {
+          updatePopup(data);
+        }
+      });
     }
   });
 }
 
-function processHtml (data, tab) {
-  var htmlObj = serpSnippetTool.utils.buildHtml(data);
-  var serp = {
-    title: serpSnippetTool.utils.buildTitle(tab.title),
-    url: serpSnippetTool.utils.buildUrl(tab.url),
-    description: serpSnippetTool.utils.buildDescription(htmlObj)
-  };
-  updatePopup(serp);
-}
-
 function updatePopup (serp) {
-  $('#title').text(serp.title);
-  $('#url').text(serp.url);
-  $('#description').text(serp.description);
+  document.getElementById('title').innerText = serp.title;
+  document.getElementById('url').innerText = serp.url;
+  document.getElementById('description').innerText =
+    serpSnippetTool.utils.buildDescription(serp.description);
 }

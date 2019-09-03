@@ -9,12 +9,6 @@ module.exports = function (grunt, options) {
         src: ['js/**', 'css/**', 'images/**', '*.html', 'manifest.json'],
         dest: 'dist/chrome/',
         nonull: true
-      }, {
-        expand: true,
-        cwd: 'node_modules/jquery/dist/',
-        src: ['jquery.min.js'],
-        dest: 'dist/chrome/js/',
-        nonull: true
       }]
     },
     buildFirefox: {
@@ -35,12 +29,6 @@ module.exports = function (grunt, options) {
             'manifest.firefox.json', 'manifest.json'
           );
         }
-      }, {
-        expand: true,
-        cwd: 'node_modules/jquery/dist/',
-        src: ['jquery.min.js'],
-        dest: 'dist/firefox/js/',
-        nonull: true
       }]
     }
   };

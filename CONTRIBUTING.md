@@ -8,23 +8,32 @@ Setup
 -----
 
 ```bash
-bower install
-npm install
+git clone git@github.com:williambelle/serp-snippet-tool.git
+cd serp-snippet-tool
+npm i
 ```
 
 Test
 ----
 
 ```bash
-npm test
+npm t
 ```
 
 Build
 -----
 
 ```bash
-grunt build
+npm run build
 ```
+
+or
+
+```bash
+npm run serve
+```
+
+to update source continuously.
 
 Run
 ---
@@ -55,7 +64,7 @@ Package
 -------
 
 ```bash
-grunt package
+npm run package
 ```
 
 License

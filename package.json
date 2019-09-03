@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/williambelle/serp-preview-extension.git",
+  "repository": "https://github.com/williambelle/serp-snippet-tool.git",
   "scripts": {
     "test": "grunt test"
   },

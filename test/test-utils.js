@@ -6,11 +6,11 @@
   describe('utils', function () {
     it('should return a nice title', function () {
       var shortTitle = 'My page title';
-      var longTitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing ' +
-        'elit. Proin tincidunt lobortis mauris quis ultricies';
+      var longTitle = 'Sleep Disorders Center: Types of Sleep Disorders, ' +
+        'Symptoms, Treatments, Causes, and Tests';
 
-      var expectedLongTitle = 'Lorem ipsum dolor sit amet, consectetur ' +
-        'adipiscing elit. Pro ...';
+      var expectedLongTitle = 'Sleep Disorders Center: Types of Sleep ' +
+        'Disorders, Symptoms, ...';
 
       var expShortTitle = serpSnippetTool.utils.buildTitle(shortTitle);
       expShortTitle.should.equal(shortTitle);

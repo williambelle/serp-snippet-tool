@@ -21,7 +21,8 @@ function retrieveData () {
 }
 
 function updatePopup (serp) {
-  document.getElementById('title').innerText = serp.title;
+  document.getElementById('title').innerText =
+    serpSnippetTool.utils.buildTitle(serp.title);
   document.getElementById('url').innerText = serp.url;
   document.getElementById('description').innerText =
     serpSnippetTool.utils.buildDescription(serp.description);

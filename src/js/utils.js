@@ -18,10 +18,7 @@ serpSnippetTool.utils = {
   },
 
   buildTitle: function (title) {
-    if (title.length > 60) {
-      title = title.substring(0, 60) + ' ...';
-    }
-    return title.trim();
+    return serpSnippetTool.utils.shorten(title, 60);
   },
 
   buildUrl: function (url) {
@@ -29,6 +26,11 @@ serpSnippetTool.utils = {
       url = url.substring(0, 69) + ' ...';
     }
     return url;
+  },
+
+  shorten: function (str, maxLen) {
+    if (str.length <= maxLen) return str;
+    return str.substr(0, str.lastIndexOf(' ', maxLen)) + ' ...';
   }
 
 };

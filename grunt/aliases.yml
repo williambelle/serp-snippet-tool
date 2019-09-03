@@ -3,6 +3,7 @@ test:
   - 'mocha'
 
 build:
+  - 'clean'
   - test
   - 'copy:buildChrome'
   - 'copy:buildFirefox'
